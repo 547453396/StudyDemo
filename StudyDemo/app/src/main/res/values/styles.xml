@@ -17,4 +17,20 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!-- 去掉状态栏和内容视图间的阴影 -->
+    <style name="Theme.IOSched" parent="android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/trans</item>
+        <!-- Scrollbar attributes -->
+        <item name="android:scrollbarSize">8dip</item>
+        <item name="android:scrollbarTrackHorizontal">@null</item>
+        <item name="android:scrollbarTrackVertical">@null</item>
+    </style>
+    <!-- 透明Activity背景 -->
+    <style name="Theme.Translucent" parent="@style/Theme.IOSched">
+    <item name="android:colorBackgroundCacheHint">@null</item>
+    <item name="android:windowIsTranslucent">true</item>
+    </style>
+
 </resources>
